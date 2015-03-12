@@ -50,7 +50,8 @@ var message = "<p>A request for a live stream event has been submitted. Resource
      else if (e.namedValues[columns[i]].toString().indexOf("@cbc.ca") == -1) {
      }
      else {
-      username += "," + e.namedValues[columns[i]].toString();
+      email += "," + e.namedValues[columns[i]].toString();
+      username = e.namedValues[columns[i]].toString();
      }
     } 
 
